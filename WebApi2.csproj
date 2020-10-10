@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200821141844_InitialCreate.cs" />
+    <Compile Remove="Migrations\20200821141844_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20200821142337_InitialCreate.cs" />
+    <Compile Remove="Migrations\20200821142337_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20200821142454_InitialCreate.cs" />
+    <Compile Remove="Migrations\20200821142454_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20201008161144_addexpiretable.cs" />
+    <Compile Remove="Migrations\20201008161144_addexpiretable.Designer.cs" />
+    <Compile Remove="Migrations\20201008161344_addexpiretable.cs" />
+    <Compile Remove="Migrations\20201008161344_addexpiretable.Designer.cs" />
+    <Compile Remove="Migrations\20201008161400_addanothertable.cs" />
+    <Compile Remove="Migrations\20201008161400_addanothertable.Designer.cs" />
+    <Compile Remove="Migrations\Payment\20201008163933_secondtrial.cs" />
+    <Compile Remove="Migrations\Payment\20201008163933_secondtrial.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.7">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\Payment\" />
+  </ItemGroup>
+
+
+</Project>
